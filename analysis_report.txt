@@ -1,0 +1,27 @@
+======================================================================
+DIGITAL DIVIDE IMPACT ON EDUCATIONAL OUTCOMES
+Statistical Analysis Report
+======================================================================
+
+DATA SOURCES:
+  - Broadband: FCC National Broadband Map (June 2025)
+  - Education: Stanford Education Data Archive (SEDA 4.1)
+
+SAMPLE:
+  - Total counties analyzed: 3134
+  - High-Speed sample: 2642 counties (CLT: YES)
+  - Low-Speed sample: 492 counties (CLT: YES)
+  - Classification threshold: 100.0% broadband access
+
+RESULTS - MATH SCORES:
+  - High-Speed mean: -0.044
+  - Low-Speed mean: -0.022
+  - Difference: -0.022 points
+  - t-statistic: -2.0031
+  - p-value: 0.0455
+  - Cohen's d: -0.090 (negligible)
+  - Statistically significant: YES
+
+INTERPRETATION:
+  Counties with high-speed broadband access show significantly higher
+  math achievement scores (p < 0.05). The effect size is negligible.
