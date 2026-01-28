@@ -85,13 +85,11 @@ seda_path = seda_county_path if seda_county_path.exists() else Path('seda.csv')
 seda = pd.read_csv(seda_path)
 print(f"  Using file: {seda_path.name}")
 
-# Key columns in SEDA:
 # - sedalea or leaid = District ID
-# - cs_mn_avg_ol = Math score (cohort standardized, pooled grades 3-8)
-# - cs_mn_avg_eb = Reading/ELA score
-# - totgyb_all = Total grade-years (for weighting)
+# - cs_mn_avg_ol = math score 
+# - cs_mn_avg_eb = reading score
+# - totgyb_all = total grade-years
 
-# Clean column names if needed
 if 'sedalea' in seda.columns:
     seda = seda.rename(columns={'sedalea': 'district_id'})
 elif 'leaid' in seda.columns:
